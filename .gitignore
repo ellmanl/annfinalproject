@@ -1,6 +1,2 @@
 images/
-X_outfit_embeddings.npy
-y_labels.npy
-X_avg_embeddings.npy
-y_avg_labels.npy
 *.npy
