@@ -243,7 +243,7 @@ The results for this outfit was 0.418 and correctly evaluated as incompatible.
 
 <img width="864" height="286" alt="IMG_3556" src="https://github.com/user-attachments/assets/8236e852-b77d-42b4-9b14-a7bb57b5d120" />
 
-**Performance ceiling** — Further architecture tuning (additional layers, adjusted dropout, optimizer changes) did not consistently improve results, suggesting the model may be limited by: noisy/subjective compatibility labels, fixed-size truncation, and the use of a frozen general-purpose ResNet50 rather than a fashion-specific backbone.
+**Outfit representation** — The model was capped at an accuracy between 60-70% in each of the different outfit embedding representations that we experimented with. This suggess that the feature vectors provided by ResNet50 may not extracted features specifically pertaining to clothing well, or that we could experiment with alternative methods of outfit representation if we had more time.  
 
 ---
 
