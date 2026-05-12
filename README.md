@@ -243,10 +243,6 @@ The results for this outfit was 0.418 and correctly evaluated as incompatible.
 
 <img width="864" height="286" alt="IMG_3556" src="https://github.com/user-attachments/assets/8236e852-b77d-42b4-9b14-a7bb57b5d120" />
 
-A telltale sign of overfitting is training accuracy greatly increasing, but validation not increasing with it which is seen in the graph.
-
-**Dying ReLU** — Early experiments produced inactive neurons receiving large negative inputs. Switching to **Leaky ReLU** resolved this, which was especially important given the high-dimensional, sparse input space from zero-padded outfits.
-
 **Performance ceiling** — Further architecture tuning (additional layers, adjusted dropout, optimizer changes) did not consistently improve results, suggesting the model may be limited by: noisy/subjective compatibility labels, fixed-size truncation, and the use of a frozen general-purpose ResNet50 rather than a fashion-specific backbone.
 
 ---
