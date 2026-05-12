@@ -137,7 +137,7 @@ Sigmoid → [0, 1] compatibility score
 | B — Neural Network | Concat + Mean | 59.2% | 0.743 |
 | **C — Pairwise Neural Network** | **Pairwise Differences** | **69.8%** | **0.771** |
 
-**Key takeaway:** Model B shows that neural network complexity alone doesn't help — the *way you represent the outfit* matters more. Model C's pairwise differences are what push it ahead, not the architecture itself.
+**Key takeaway:** Model B shows that neural network complexity alone didn't help rather the way we represented the outfit matters more. Model C's pairwise differences are what push it ahead, not the architecture itself.
 
 ---
 
