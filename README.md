@@ -27,6 +27,7 @@ Fashion sense is often intuitive and deeply personal. Most people can sense when
 
 The goal of this project was to build an **outfit compatibility classifier** that predicts whether a group of clothing items forms a compatible outfit. Instead of manually defining fashion rules, such as “these colors match” or “these silhouettes work together,” we wanted to see whether a machine learning model could learn visual compatibility patterns from examples, especially since outfit compatibility is so subjective and context-dependent. 
 
+Previous 
 
 ---
 
@@ -249,7 +250,7 @@ The results for this outfit was 0.418 and correctly evaluated as incompatible.
 
 ---
 
-## Conclusion
+## Conclusion and Future Plans
 
 Through this project, we found that outfit compatibility can be predicted from visual features with better-than-chance accuracy.
 
@@ -257,9 +258,14 @@ Through this project, we found that outfit compatibility can be predicted from v
 - **Model B** showed that neural network complexity alone is not enough — the wrong embedding strategy produced a worse model than the simple baseline
 - **Model C** showed that adding pairwise item relationships made the neural network substantially more effective and better aligned with what outfit compatibility actually means
 
-Model C was used for the personal photo pipeline, where SegFormer segmentation enables compatibility scoring of real outfit photos without requiring pre-cropped, catalogued item images.
+If we were to continue improving the project, future directions could include using a larger data set, experimenting with more embedding types, and potentially fine-tuning the ResNet50 CNN on fashion-specific data.  
 
-**Future directions:**
-- Larger training data or data augmentation
-- Category-conditioned compatibility embeddings
-- Fine-tuning the ResNet50 backbone on fashion-specific data rather than keeping it frozen
+---
+
+## Sources
+@inproceedings{han2017learning,
+  author = {Han, Xintong and Wu, Zuxuan and Jiang, Yu-Gang and Davis, Larry S},
+  title = {Learning Fashion Compatibility with Bidirectional LSTMs},
+  booktitle = {ACM Multimedia},
+  year  = {2017},
+}
