@@ -237,9 +237,13 @@ The results for this outfit was 0.418 and correctly evaluated as incompatible.
 
 ## Challenges
 
-**Variable-length outfits** — Polyvore outfits can contain 2–6+ items, but neural networks require fixed-size inputs. We padded shorter outfits with zero vectors and truncated longer ones to four items. The mean embedding is computed *before* padding to avoid zero-vector bias. A permutation-invariant architecture (e.g. Set Transformer or DeepSets) would be a stronger long-term solution.
+**Not enough data** — The cleaned Polyvore dataset only contained 5,544 which isn't nearly enough to represent all the outfits in the world. Additonally, the Polyvore dataset is trained on data from 2017 which influences what it thinks is fashionable or not.
 
-**Missing images** — Many outfit entries referenced files unavailable locally. Outfits with fewer than two resolvable images were dropped entirely, consistently across all models to ensure fair comparison.
+**Overfitting** - Our embedding methods involved creating very high dimensional vectors (we concatenated each item, added an average representation, and even added pairwise representation), which leads to a model with bigger parameters and leads to a higher chance of overfitting, which happened in our model.
+
+<img width="864" height="286" alt="IMG_3556" src="https://github.com/user-attachments/assets/8236e852-b77d-42b4-9b14-a7bb57b5d120" />
+
+A telltale sign of overfitting is training accuracy greatly increasing, but validation not increasing with it which is seen in the graph.
 
 **Dying ReLU** — Early experiments produced inactive neurons receiving large negative inputs. Switching to **Leaky ReLU** resolved this, which was especially important given the high-dimensional, sparse input space from zero-padded outfits.
 
