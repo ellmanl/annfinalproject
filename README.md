@@ -185,6 +185,7 @@ The confusion matrices revealed important differences in *how* each model makes 
 <img width="649" height="547" alt="Unknown-4" src="https://github.com/user-attachments/assets/017b809a-a8d3-4ea4-8c64-8b4da25ab95c" />
 
 ---
+### Sample Predictions
 
 **Model C — Correct Predictions**
 <img width="1100" height="755" alt="IMG_2848" src="https://github.com/user-attachments/assets/16863b1c-6734-4f1b-aad1-1c41e5e7c3a2" />
