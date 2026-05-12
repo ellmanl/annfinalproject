@@ -23,9 +23,10 @@
 
 ## Introduction
 
-Fashion sense is often intuitive and deeply personal. Most people can sense when an outfit works and when it doesn't. But some combinations are harder to judge, and sometimes you just want a second opinion.
+Fashion sense is often intuitive and deeply personal. Most people can sense when an outfit works, and they can usually tell when it does not. However, some outfit combinations are harder to judge, and sometimes you may just want a second opinion. This project explores whether a neural network can learn that same sense of visual compatibility from data alone.
 
-This project explores whether a neural network can learn that same sense of visual compatibility from data alone. The goal was to build an **outfit compatibility classifier** that predicts whether a group of clothing items forms a compatible outfit without manually defining fashion rules like "these colors match" or "these silhouettes work together."
+The goal of this project was to build an **outfit compatibility classifier** that predicts whether a group of clothing items forms a compatible outfit. Instead of manually defining fashion rules, such as “these colors match” or “these silhouettes work together,” we wanted to see whether a machine learning model could learn visual compatibility patterns from examples, especially since outfit compatibility is so subjective and context-dependent. 
+
 
 ---
 
