@@ -263,9 +263,4 @@ If we were to continue improving the project, future directions could include us
 ---
 
 ## Sources
-@inproceedings{han2017learning,
-  author = {Han, Xintong and Wu, Zuxuan and Jiang, Yu-Gang and Davis, Larry S},
-  title = {Learning Fashion Compatibility with Bidirectional LSTMs},
-  booktitle = {ACM Multimedia},
-  year  = {2017},
-}
+Han, X., Wu, Z., Jiang, Y.-G., & Davis, L. S. (2017). Learning Fashion Compatibility with Bidirectional LSTMs. ACM Multimedia. https://arxiv.org/abs/1707.05691. 
