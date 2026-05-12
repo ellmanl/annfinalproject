@@ -213,8 +213,13 @@ As a practical extension, the project implements an **end-to-end pipeline for ev
 | DRESS | Full dress |
 | SHOES | Footwear |
 
-<img width="754" height="515" alt="image" src="https://github.com/user-attachments/assets/f7d59b4f-1ddb-4d55-ae22-003fbdc21f6b" />
+<img width="739" height="515" alt="Unknown-5" src="https://github.com/user-attachments/assets/c9d7feea-92b9-4925-b970-d5c851bd819b" />
 
+
+<img width="1063" height="515" alt="Unknown-6" src="https://github.com/user-attachments/assets/7a5e5eb2-92ea-4b8e-9e69-cd2764f9df46" />
+
+
+The results for this outfit was 0.418 and correctly evaluated as incompatible.
 
 ---
 
