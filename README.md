@@ -23,9 +23,9 @@
 
 ## Introduction
 
-Fashion sense is often intuitive and deeply personal. Most people can sense when an outfit works — and when it doesn't. But some combinations are harder to judge, and sometimes you just want a second opinion.
+Fashion sense is often intuitive and deeply personal. Most people can sense when an outfit works and when it doesn't. But some combinations are harder to judge, and sometimes you just want a second opinion.
 
-This project explores whether a neural network can learn that same sense of visual compatibility from data alone. The goal was to build an **outfit compatibility classifier** that predicts whether a group of clothing items forms a compatible outfit — without manually defining fashion rules like "these colors match" or "these silhouettes work together."
+This project explores whether a neural network can learn that same sense of visual compatibility from data alone. The goal was to build an **outfit compatibility classifier** that predicts whether a group of clothing items forms a compatible outfit without manually defining fashion rules like "these colors match" or "these silhouettes work together."
 
 ---
 
@@ -149,6 +149,10 @@ The ROC curve evaluates each model's ability to separate compatible from incompa
 - Model B underperforms even the logistic regression baseline (0.743 vs 0.766), confirming that the concat+mean embedding was the bottleneck
 - The margins are tight — Models A and C are nearly identical across much of the curve, but pairwise features give Model C a consistent edge
 
+<img width="790" height="590" alt="Unknown" src="https://github.com/user-attachments/assets/9a0da604-3181-488f-987f-4eaf57bc236f" />
+
+  
+
 ---
 
 ### Confusion Matrices
@@ -156,21 +160,30 @@ The ROC curve evaluates each model's ability to separate compatible from incompa
 The confusion matrices revealed important differences in *how* each model makes errors:
 
 **Model A — Logistic Regression**
-- ✅ Correctly identified 516/657 incompatible outfits
-- ✅ Correctly identified 266/452 compatible outfits
+- Correctly identified 516/657 incompatible outfits
+- Correctly identified 266/452 compatible outfits
 - Biased toward predicting incompatible, but functional on both classes
 
+<img width="649" height="547" alt="Unknown-2" src="https://github.com/user-attachments/assets/9c1d536f-7139-4897-9170-59132072676a" />
+
+
 **Model B — Concat + Mean NN**
-- ✅ Correctly identified 657/657 incompatible outfits
-- ❌ Correctly identified 0/452 compatible outfits
+- Correctly identified 657/657 incompatible outfits
+- Correctly identified 0/452 compatible outfits
 - **Predicted every outfit as incompatible** — learned nothing about compatibility
 
+<img width="649" height="547" alt="Unknown-3" src="https://github.com/user-attachments/assets/a5fbf3a5-cfc7-46c5-a55f-77149bdb09ea" />
+
+
 **Model C — Pairwise NN**
-- ✅ Correctly identified 568/657 incompatible outfits
-- ✅ Correctly identified 206/452 compatible outfits
+- Correctly identified 568/657 incompatible outfits
+- Correctly identified 206/452 compatible outfits
 - **Most balanced** — the only neural network that genuinely learned both classes
 
 > A useful outfit compatibility rater should not simply reject most outfits. Model C is the only model that can identify when an outfit *works* and when it doesn't.
+
+<img width="649" height="547" alt="Unknown-4" src="https://github.com/user-attachments/assets/017b809a-a8d3-4ea4-8c64-8b4da25ab95c" />
+
 
 ---
 
@@ -191,6 +204,9 @@ As a practical extension, the project implements an **end-to-end pipeline for ev
 | BOTTOM | Pants / Skirt |
 | DRESS | Full dress |
 | SHOES | Footwear |
+
+<img width="754" height="515" alt="image" src="https://github.com/user-attachments/assets/f7d59b4f-1ddb-4d55-ae22-003fbdc21f6b" />
+
 
 ---
 
